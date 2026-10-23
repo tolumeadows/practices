@@ -1,0 +1,10 @@
+import flask from flask, render_template # import the flask structure and render_template to connect back to front end
+
+app = Flask(__name__, template_folder='.') # look into this folder "." (not a separate template folder) for the html
+
+@app.route('/') # sort of needed to lauch app
+def home(): # function "home" we call towards the end
+    return render_template('index.html') # connects to the index.html file
+
+if __name__ == '__main__': # if this file matches main(?)
+    app.run(debug=True, port=8000)
