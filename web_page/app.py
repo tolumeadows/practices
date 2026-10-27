@@ -6,5 +6,9 @@ app = Flask(__name__, template_folder='.') # look into this folder "." (not a se
 def home(): # function "home" we call towards the end
     return render_template('index.html') # connects to the index.html file
 
+@app.route('/narr') #when someone visits the url for this second page, run the bellow
+def narr(): 
+    return render_template('narr.html')
+
 if __name__ == '__main__': # if this file matches main(?)
     app.run(debug=True, port=8000)
