@@ -1,4 +1,37 @@
 body {
-    background-color: #f00;
+    background-color: #000;
+    color: rgb(0, 81, 255);
+}
+
+title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+ol {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+ul {
+    font-family: 'Share Tech Mono', monospace;
 }
 
