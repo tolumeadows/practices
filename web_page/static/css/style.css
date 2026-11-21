@@ -1,38 +1,84 @@
 body {
     background-color: #000;
-    color: rgb(0, 81, 255);
+    color: rgb(187, 202, 235);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.2;
+    margin-block: 0;
 }
 
-title {
-    font-family: 'Rajdhani', sans-serif;
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Syne', sans-serif;
     font-weight: 700;
 }
+
 
 h1 {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
+    text-align: center;
+    font-size: 6rem;
 }
 
-h2 {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
+.center_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    padding: 3rem;
 }
 
-h3 {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
+.center_box ul,
+.center_box ol {
+    text-align: left;
 }
 
 p {
-    font-family: 'Share Tech Mono', monospace;
+
+    font-size: 1.2rem;
 }
 
-ol {
-    font-family: 'Share Tech Mono', monospace;
+.sly_info {
+    text-align: center;
 }
 
-ul {
-    font-family: 'Share Tech Mono', monospace;
+.highlight {
+    color: rgb(230, 125, 125);
+}
+
+.Dark_Banner {
+    background: 
+        linear-gradient(rgba(0,0,0,var(--tint, 0.6)), rgba(0,0,0,var(--tint, 0.6))) 0 0 / 8px 8px repeat,
+        var(--bg-image) var(--bg-pos, center 95%) / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    padding: 3rem;
+}
+
+
+
+.Alligator {
+    --bg-image: url("/static/images/Alligators.jpg") ;
+}
+
+.Kaisona_Meeting {
+    --tint: 0.7;
+    --bg-image: url("/static/images/Kaisona_Meeting.jpg") ;
+    --bg-pos: center 43%;
+}
+
+.Gods {
+    --bg-image: url("/static/images/Gods.jpg") ;
+    --bg-pos: center 90%;
+    --tint: 0.5;
+}
+
+.wrapper {
+    max-inline-size: 100%;
+    margin-inline: auto;
 }
 
 img {

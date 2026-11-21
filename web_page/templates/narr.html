@@ -1,20 +1,22 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>The Kaisoons</title>
+        <title>The <span class="highlight">Kaisoons</span></title>
         <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
     </head>
 
     <body>
-        <h1>The Kaisoons</h1>
-        <p><em>The paintings and which Kaisoons appear in each one.</em></p>
+        <h1>The <span class="highlight">Kaisoons</span></h1>
+        <p><em>The paintings and which <span class="highlight">Kaisoons</span> appear in each one.</em></p>
 
-        <ul>
-            <li>Moths: Epicephalas</li>
-            <li>Clown: Unmeedi</li>
-        </ul>
+        <div>
+            <ul>
+                <li>Moths: Epicephalas</li>
+                <li>Clown: Unmeedi</li>
+            </ul>
 
-        <img src="{{ url_for('static', filename='images/IMG_8398.jpg') }}" alt="an acrylic painting in my style, clown bending over in a field of grass with moth on picture" style="width: 15%; height: auto"/>
+            <img src="{{ url_for('static', filename='images/IMG_8398.jpg') }}" alt="an acrylic painting in my style, clown bending over in a field of grass with moth on picture" style="width: 15%; height: auto"/>
+        </div>
 
         <ul>
             <li>The Floating Orbs: Hollow Fernes</li>

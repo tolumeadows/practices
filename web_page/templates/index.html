@@ -2,50 +2,69 @@
     <html>
 
         <head>
-            <title>Art Gallary</title>
-            <h1> 2026-2027 Art Gallary</h1>
-            <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
-            <link rel="preconnect" href="https://googleapis.com">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Art Gallery</title>
+
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+            <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
         </head>
 
 
         <body>
+            
             <header>
-                <p>Bodies of artwork about <strong>intelligence</strong>, <strong>love</strong>, and a special kind of <strong>eternal damnation</strong>. In one word, "<em>Kaisoon</em>."</p>
+                <div class="Dark_Banner Alligator">
+                    <h1> 2026-2027 Art Gallery</h1>
+                    <p class="sly_info"><strong>Bodies of artwork about <strong>intelligence</strong>, <strong>love</strong>, and <strong>eternal damnation</strong>. In one word, "<span class="highlight"><em>Kaisona</em></span>."</strong></p>
+                </div>
             </header>
 
             <main>
-                <section>
-                    <h2>Mediums (ordered by use)</h2>
-                    <ol>
-                        <li>Acrylic Paint</li>
-                    </ol>
-                </section>
+                <!--COME BACK TO THIS WRAPPER PART LATER AND FIGURE OUT WHEN/WHERE AND WHEN/WHERE NOT TO USE IT-->
+                <!--NEED TO LEARN HOW TO DO TWO COLUMN LAYOUT AND INCLUDE THE CANVAS MEDIUM-->
+                <div class="wrapper">   
+                    <section class="center_box">
+                        <h2>Mediums (ordered by use)</h2>
+                        <ol>
+                            <li>Acrylic Paint</li>
+                            <li>Oil Paint</li>
+                        </ol>
+                    </section>
+                </div>   
 
                 <section>
-                    <h2>Themes</h2>
-                    <ul>
-                        <li>The Intertestamental Period (The 400 Silent Years)</li>
-                        <li>The Deuterocanonical Period's Writings</li>
-                        <li>"Eternal Damnation"</li>
-                        <li>The Trinity (or at least some version of it)</li>
-                        <li>Smart Heavenly Creatures</li>
-                    </ul>
+                    <div class="Dark_Banner Kaisona_Meeting">
+                        <div>
+                            <h2>Themes</h2>
+                            <ul>
+                                <li>The Intertestamental Period (The 400 Silent Years)</li>
+                                <li>The Deuterocanonical Period's Writings</li>
+                                <li>"Eternal Damnation"</li>
+                                <li>The Trinity (or at least some version of it)</li>
+                                <li>Smart Heavenly Creatures</li>
+                            </ul>
+                    </div>
+                    </div>
                 </section>
 
+                <!--MIGHT NOT NEED CENTER_BOX HERE IF I PUT IT IN AN IMAGE BACKGROUND THING-->
                 <section>
                     <h2>Characters</h2>
-                    <h3>The Trinity:</h3>
-                    <ul>
-                        <li>The Father</li>
-                        <li>The Daughter (Susanna)</li>
-                        <li>The Spirit</li>
-                    </ul>
+                        <div class="Dark_Banner Gods">
+                            <h3>The Trinity:</h3>
+                            <ul>
+                                <li>The Father</li>
+                                <li>The Daughter (Susanna)</li>
+                                <li>The Spirit</li>
+                            </ul>
+                        </div>
 
-                    <h3>The Kaisoons (ordered by age):</h3>
+                    <h3>The <span class="highlight">Kaisoons</span> (ordered by age):</h3>
                     <p><em>*Earthly Descrption: (Species Name/Self-Assigned Moniker)*</em></p>
                     <ul>
                         <li>Moths: Epicephalas</li>
@@ -56,7 +75,7 @@
                         <li>Dog: Tobit</li>
                         <li>Clown: Me</li>
                     </ul>
-                    <p><em>Click <a href="/narr">here</a> to see each Kaisoon in the respective painting it was introduced in.</em></p>
+                    <p><em>Click <a href="/narr">here</a> to see each <span class="Highlight">Kaisoon</span> in the respective painting it was introduced in.</em></p>
                 </section>
             </main>
             <footer></footer>
